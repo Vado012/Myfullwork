@@ -23,10 +23,13 @@ function Body() {
   };
 
   return (
-    <div className="min-h-[650px] bg-[url(gg.jpg)] bg-no-repeat bg-cover flex flex-col md:flex-row items-center md:items-stretch">
+    <div className="min-h-[650px] relative  flex flex-col md:flex-row items-center md:items-stretch">
+      <img src="gg.jpg" alt="" />
       
       {/* Left Section */}
-      <motion.div
+      <div className="absolute flex">
+
+        <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -128,6 +131,7 @@ function Body() {
           whileHover={{ scale: 1.05, rotate: 2 }}
         />
       </motion.div>
+      </div>
       
   
 
