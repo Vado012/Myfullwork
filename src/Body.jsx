@@ -17,7 +17,7 @@ function Body() {
   return (
     <div
       className="min-h-[650px] flex flex-col md:flex-row items-center justify-between 
-                 bg-[url('/gg.jpg')] bg-cover bg-center px-4 sm:px-8 md:px-16 lg:px-20 py-10 gap-10 md:gap-16"
+                 bg-[url('/gg.jpg')] bg-[#0008] bg-blend-darken bg-cover bg-center px-4 sm:px-8 md:px-16 lg:px-20 py-10 gap-10 md:gap-16"
     >
       {/* Left Section */}
       <motion.div
@@ -40,28 +40,28 @@ function Body() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="text-2xl sm:text-3xl md:text-5xl font-extrabold font-serif text-blue-500 shadow-lg"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-serif text-lime-300 before:content-[''] before:absolute before:w-[20px] before:h-[20px] before:border-t-4 before:border-t-white before:border-l-4 before:ml-[-20px] before:mt-[-10px] before:border-l-white after:content-[''] after:absolute after:w-[20px] after:h-[20px] after:border-b-4 after:border-b-white after:border-r-4 after:mr-[-20px] after:mt-[30px] after:border-r-white pl-2.5"
         >
-          Okamkpa Chinedu
+          Okamk<span className=" text-white">pa Ch</span>inedu
         </motion.h1>
 
         <motion.h4
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-sm sm:text-lg md:text-2xl font-serif text-gray-300"
+          className="md:text-[1.2rem] text-white"
         >
-          A FullStack Website Designer
+          A FullStack web developer
         </motion.h4>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-white"
+          className=" leading-relaxed text-white"
         >
           I'm a passionate full-stack developer who creates{" "}
-          <span className="font-bold text-blue-500">EXTRAORDINARY</span> digital experiences
+          <span className="font-bold text-lime-300">EXTRAORDINARY</span> digital experiences
           that captivate users and drive business success.
         </motion.p>
 

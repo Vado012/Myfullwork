@@ -38,12 +38,7 @@ function Services() {
   return (
     <div
       id="services"
-      className="relative min-h-[650px] bg-gray-900 flex flex-col items-center py-16 px-6 text-white"
-      style={{
-        backgroundImage: "url('code.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative min-h-[650px] bg-black flex flex-col items-center py-16 px-6 text-white"
     >
       {/* Section Heading */}
       <motion.div
@@ -62,7 +57,7 @@ function Services() {
       </motion.div>
 
       {/* Service Cards */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 justify-center">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4 justify-center">
         {services.map((service, i) => (
           <motion.div
             key={i}
@@ -71,7 +66,7 @@ function Services() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="h-[350px] w-[300px] bg-white/90 backdrop-blur-md shadow-xl rounded-2xl px-6 py-9 text-black hover:scale-105 transition-transform duration-300 flex flex-col shadow-amber-500"
+            className=" bg-white/90  rounded-xl px-6 py-9 text-black hover:scale-105 transition-transform duration-300 flex flex-col"
           >
             <center>
               <FaCode className="text-4xl text-amber-600" />

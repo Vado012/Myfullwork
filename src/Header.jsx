@@ -11,6 +11,7 @@ function Header() {
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" },
+    { name: "Projects", href: "#projects" },
   ];
 
   
@@ -27,26 +28,20 @@ function Header() {
   };
 
   return (
-    <header className="h-[60px] sticky relative top-0 z-50 bg-black/90 backdrop-blur-md text-white flex items-center justify-between px-9    shadow-md shadow-amber-500">
+    <header className="h-[60px] sticky relative top-0 z-50 bg-black/90 backdrop-blur-md text-white flex items-center justify-around ">
       
       
       <div>
         
-        <FaJetFighterUp className="absolute left-4 top-5 text-3xl text-amber-500"/>
-        <p className="text-2xl font-extrabold font-serif text-blue-700 shadow-md shadow-amber-500 px-4
-        ">
-        
-          Okamkpa Chinedu
-        </p>
-        <p className="text-gray-300 text-xs sm:text-sm px-4">
-          FullStack Website Designer
+        <p className="text-3xl font-extrabold font-[cursive] text-lime-300 shadow-md">
+          O.C
         </p>
       </div>
 
       
-      <nav className="hidden md:flex gap-10 lg:gap-20">
+      <nav className="hidden md:flex gap-10 lg:gap-10">
         {navLinks.map((link, i) => (
-          <a key={i} href={link.href} className="hover:text-blue-500 transition">
+          <a key={i} href={link.href} className="hover:text-lime-300 transition">
             {link.name}
           </a>
         ))}

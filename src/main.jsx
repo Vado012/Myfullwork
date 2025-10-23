@@ -10,6 +10,7 @@ import About from './About'
 import SocialIcons from './SocialIcon'
 import Vamos from './Vamos'
 import Footer from './Footer'
+import Projects from './Projects'
 
 
 
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
     <Services/>
     <SimpleSlider/>
     <About/>
+    <Projects/>
     <SocialIcons/>
   <Vamos/>
   <Footer/>
