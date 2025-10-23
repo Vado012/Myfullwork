@@ -55,7 +55,7 @@ function Vamos() {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center bg-white rounded-xl shadow-md shadow-amber-400 p-6 hover:scale-105 transition-transform text-center"
+            className="flex flex-col items-center justify-center bg-white rounded-xl shadow-sm shadow-black p-6 hover:scale-105 transition-transform text-center"
             variants={cardVariants}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >

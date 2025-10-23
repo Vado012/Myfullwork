@@ -16,6 +16,12 @@ function Projects() {
       image: "henley.png",
       link: "https://www.henleyandharrisfoundation.com/",
     },
+    {
+        title:"Project: Rois Collection — Fashion E-Commerce",
+        writeUp:"Rois Collection is a sleek fashion e-commerce website built to practice modern front-end development and design. It features a clean, responsive layout where users can browse stylish outfits, explore product details, and get a smooth online shopping experience.The focus was on creating a minimal, elegant interface that balances aesthetics with usability — perfect for a modern clothing brand.",
+        image:"rios.png",
+        link:"https://roiscollection.vercel.app/",
+    }
   ];
 
   return (
@@ -23,7 +29,7 @@ function Projects() {
       <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-12">
         Featured Projects
       </h2>
-    
+
       <div className="space-y-16">
         {projects.map((project, index) => (
           <div
