@@ -70,9 +70,9 @@ function Body() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1 }}
-          className="w-full p-4 sm:p-6 bg-white rounded-xl shadow-md shadow-amber-500"
+          className="w-full p-4 sm:p-6 bg-[#0006] rounded-xl border-2 border-lime-400"
         >
-          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 text-center text-blue-700">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 text-center text-lime-400">
             My Skills
           </h2>
 
@@ -88,7 +88,7 @@ function Body() {
                 key={i}
                 variants={itemVariants}
                 whileHover={{ scale: 1.1 }}
-                className="flex items-center gap-2 cursor-pointer text-sm sm:text-base md:text-lg"
+                className="flex items-center gap-2 cursor-pointer text-white text-sm sm:text-base md:text-lg"
               >
                 <span className="text-green-500">✅</span> {skill}
               </motion.div>
@@ -108,7 +108,7 @@ function Body() {
         <motion.img
           src="/me.jpg"
           alt="Portrait of Okamkpa Chinedu"
-          className="h-[220px] w-[180px] sm:h-[280px] sm:w-[220px] md:h-[380px] md:w-[320px] lg:h-[450px] lg:w-[380px] rounded-3xl object-cover shadow-lg border-4 border-white"
+          className="h-[220px] w-[180px] sm:h-[280px] sm:w-[220px] md:h-[380px] md:w-[320px] lg:h-[450px] lg:w-[380px] rounded-3xl object-cover shadow-lg border-2 border-lime-400"
           animate={{ y: [0, -15, 0] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           whileHover={{ scale: 1.05, rotate: 2 }}
